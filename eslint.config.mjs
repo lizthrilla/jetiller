@@ -14,7 +14,7 @@ const eslintConfig = [
   {
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
     rules: {
-      quotes: ["error", "single", { avoidEscape: true }],
+      quotes: ["error", "double", { avoidEscape: true }],
     },
   },
 ];
