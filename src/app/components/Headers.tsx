@@ -24,3 +24,18 @@ export function LogoHeader({pageTitle, pageSubtitle}: {pageTitle: string, pageSu
         </header>
     )
 }
+
+export function PageHeader({pageTitle, pageSubtitle}: {pageTitle: string, pageSubtitle: string}) {
+    return (
+        <header className="grid grid-rows-1 items-center gap-0 md:flex md:flex-wrap">
+            <div className="grid-rows-2 font-bf-display w-full">
+                <h1 className="text-2xl row-start-1 text-bf-blue font-bold"  >
+                   {pageTitle}
+                </h1>
+                <h2 className="row-start-2">
+                    {pageSubtitle}
+                </h2>
+            </div>
+        </header>
+    )
+}

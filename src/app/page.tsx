@@ -8,7 +8,7 @@ export default function Home() {
     <Main>
       <LogoHeader pageTitle="Butterfly Financial Consultants" pageSubtitle="Reinsurance and Acquisition solutions" />
       <MainPageLayout>
-        <Section id="about" className="bg-gray-200">
+        <Section id="about" className="bg-gray-200"> 
         <p>
             Butterfly Financial Consultants provides consulting services for mergers and acquisitions with respect to blocks of insurance, entire companies, and reinsurance for both buyers and sellers.  John Tiller, and his wife, Denise, literally wrote the book on reinsurance and can help analyze and structure reinsurance arrangements.  Other services include capital planning, strategic planning, business management, enterprise risk management, as well as expert witness and arbitration.  See our Services page for more information.
         </p>

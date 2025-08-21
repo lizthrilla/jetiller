@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 const navigation = [
-    {name: "About", href: "/#about"},
+    {name: "About", href: "/about"},
     {name: "Services", href: "/services"},
     {name: "Contact", href: "/#contact"},
 ]

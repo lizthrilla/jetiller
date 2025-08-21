@@ -9,8 +9,7 @@ export const ServicesData: Service[] = [
     {
         id: "sellers",
         name: "Sellers or ceding companies",
-        summary:
-        "Butterfly provides services for sellers and ceding companies, from block identification to transaction structuring.",
+        summary: "Butterfly provides services for sellers and ceding companies, from block identification to transaction structuring.",
         bullets: [
             "Identify blocks or companies that could be marketed",
             "Identify potential risks, both to the transaction and afterwards, in disposing of business",
