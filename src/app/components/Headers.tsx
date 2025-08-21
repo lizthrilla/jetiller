@@ -9,7 +9,7 @@ export function SectionHeader({ children, className }: { children: React.ReactNo
 
 export function LogoHeader({pageTitle, pageSubtitle}: {pageTitle: string, pageSubtitle: string}) {
     return (
-        <header className="grid grid-rows-1 grid-cols-2 items-center gap-0 md:flex md:flex-wrap">
+        <header className="grid grid-rows-1 grid-cols-2 items-center gap-0 md:flex md:flex-wrap my-0">
             <div className="pr-0 md:pr-10">
                 <Image src="/butterflyLogos/logo-transparent-svg.svg" alt="Butterfly Financial Consultants Logo" width={500} height={500} className="h-48 w-auto"/>
             </div>
