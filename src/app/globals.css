@@ -21,6 +21,16 @@
   --font-bf-copy: "Lato", sans-serif;
 }
 
+@layer base {
+  html {
+    font-size: 20px; /* default is 16px */
+  }
+}
+
+p {
+  color: var(--color-neutral-700);
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
