@@ -44,13 +44,13 @@ export default function About() {
                              John became National Director of the Life Insurance Actuarial Consulting Practice of KPMG Peat Marwick LLP. While responsible for a wide range of actuarial and general consulting activities, he maintained his leadership role in reinsurance.
                          </p>
                          <p>
-                             John joined Employers Reassurance Company (ERC), a subsidiary of GE in November 1998 as the Business Development Leader for North American Life Reinsurance. In September 1999, Tiller was named to lead the newly formed North American Life and Health Reinsurance Segment and in January 2000 he became President and Chief Operating Officer for ERC's two North American life reinsurance companies. He then served as President and CEO of GE ERC's Global Life & Health Reinsurance.
+                             John joined Employers Reassurance Company (ERC), a subsidiary of GE in November 1998 as the Business Development Leader for North American Life Reinsurance. In September 1999, Tiller was named to lead the newly formed North American Life and Health Reinsurance Segment and in January 2000 he became President and Chief Operating Officer for ERC&apos;s two North American life reinsurance companies. He then served as President and CEO of GE ERC&apos;s Global Life &amp; Health Reinsurance.
                          </p>
                          <p>
                              After GE exited the reinsurance business, John founded Butterfly Financial Consultants, LLC to provide consulting services specializing in reinsurance. He also became part-time President of Unified Life where he directed the acquisition of several blocks of life and health business.
                          </p>
                          <p>
-                             John's other professional activities include:
+                             John&apos;s other professional activities include:
                              <ul className="list-disc px-10">
                                  <li>Co-author, Life, Health, and Annuity Reinsurance, ACTEX, Winstead, CT</li>
                                  <li>Founding member and officer of the Reinsurance Section Council of the Society of Actuaries</li>
@@ -60,7 +60,7 @@ export default function About() {
                                  <li>Chair of the Program Committee of the Society of Actuaries</li>
                                  <li>Chair of the Continuing Education Committees of the Society</li>
                                  <li>Member of many Society of Actuaries committees and task forces including Services to Members, Research Policy, Professional Development, and the First Task Force on AIDS</li>
-                                 <li>Chair of the ACLI's special task force on taxation of reinsurance transactions in the early 1980s</li>
+                                 <li>Chair of the ACLI&apos;s special task force on taxation of reinsurance transactions in the early 1980s</li>
                                  <li>Academy of Actuaries task force on risk classification</li>
                                  <li>Faculty, Society of Actuaries Reinsurance Seminars</li>
                                  <li>Frequent speaker at Society of Actuaries meetings and other industry meetings</li>
@@ -74,13 +74,13 @@ export default function About() {
                          </div>
                          <h2 className="text-2xl font-semibold">Denise Fagerberg Tiller, FSA, MLIS</h2>
                          <p>
-                             Denise Fagerberg Tiller is a graduate of the University of Nebraska-Lincoln. She is a Fellow of the Society of Actuaries, a Member of the American Academy of Actuaries, and a Fellow of the Life Office Management Association. She received a Master's Degree in Library and Information Science from Emporia State University.
+                             Denise Fagerberg Tiller is a graduate of the University of Nebraska-Lincoln. She is a Fellow of the Society of Actuaries, a Member of the American Academy of Actuaries, and a Fellow of the Life Office Management Association. She received a Master&apos;s Degree in Library and Information Science from Emporia State University.
                          </p>
                          <p>
                              Denise began her actuarial career with CNA and worked at Maccabees Mutual Life Insurance Company as Manager of the Individual Life Actuarial Department prior to joining Transamerica Occidental Life Insurance Company as Manager of Reinsurance Pricing in 1980 where she developed pricing assumptions and procedures manual and worked closely with the clients to create proposals. She later moved to Tillinghast, Nelson, and Warren,now part of Towers Watson, where she focused her consulting services on individual life insurance product development and reinsurance.
                          </p>
                          <p>
-                             Denise's other professional activities include:
+                             Denise&apos;s other professional activities include:
                              <ul className="list-disc px-10">
                                  <li>Co-author, Life, Health, and Annuity Reinsurance, ACTEX, Winstead, CT</li>
                                  <li>President, Los Angeles Actuarial Club</li>
@@ -90,7 +90,6 @@ export default function About() {
                                  <li>Moderator and organizer of the Society of Actuaries Symposium on HIV an AIDS</li>
                                  <li>Faculty, Society of Actuaries Reinsurance Seminars</li>
                                  <li>Frequent panelist and workshop chairman at Society of Actuaries meetings</li>
-
                              </ul>
                          </p>
                      </div>
