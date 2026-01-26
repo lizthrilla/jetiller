@@ -144,7 +144,7 @@ describe("Contact Page", () => {
 
       await waitFor(() => {
         expect(global.fetch).toHaveBeenCalledWith(
-          "/contact",
+          "/__forms.html",
           expect.objectContaining({
             method: "POST",
             body: expect.stringContaining("form-name=contact"),
