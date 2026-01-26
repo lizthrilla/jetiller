@@ -8,6 +8,7 @@ const navigation = [
     {name: "Services", mobileName: "Services", href: "/services"},
     {name: "Life, Health and Annuity Reinsurance", mobileName: "Book", href: "/book"},
     {name: "About", mobileName: "About", href: "/about"},
+    {name: "Resources", mobileName: "Resources", href: "/resources"},
     {name: "Contact", mobileName: "Contact", href: "/contact"},
 ]
 
