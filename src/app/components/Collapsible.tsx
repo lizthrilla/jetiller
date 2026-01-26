@@ -14,7 +14,7 @@ export default function Collapsible({ title, children, defaultOpen = false }: Co
     return (
         <Disclosure defaultOpen={defaultOpen}>
             {({ open }) => (
-                <>
+                <div>
                     <DisclosureButton className="flex items-center gap-2 w-full py-3 text-left cursor-pointer text-bf-blue font-bf-display font-bold text-lg hover:opacity-80 transition-opacity">
                         <FaChevronDown 
                             className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} 
@@ -30,7 +30,7 @@ export default function Collapsible({ title, children, defaultOpen = false }: Co
                             {children}
                         </DisclosurePanel>
                     </div>
-                </>
+                </div>
             )}
         </Disclosure>
     );
