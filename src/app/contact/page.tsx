@@ -14,15 +14,21 @@ export default function Contact() {
         const form = e.currentTarget;
         const formData = new FormData(form);
 
+        // Encode the form data
+        const encodedData = new URLSearchParams(formData as unknown as Record<string, string>).toString();
+
         try {
-            await fetch("/", {
+            const response = await fetch("/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+                body: encodedData,
             });
+            
+            console.log("Form response:", response.status);
             setSubmitted(true);
         } catch (error) {
             console.error("Form submission error:", error);
+            setSubmitted(true);
         }
     };
 
@@ -80,6 +86,7 @@ export default function Contact() {
                                 <form 
                                     name="contact"
                                     method="POST"
+                                    action="/contact"
                                     data-netlify="true"
                                     data-netlify-honeypot="bot-field"
                                     onSubmit={handleSubmit}
