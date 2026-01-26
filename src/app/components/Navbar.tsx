@@ -5,9 +5,10 @@ import { FaBars } from "react-icons/fa";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 const navigation = [
-    {name: "Services", href: "/services"},
-    {name: "About", href: "/about"},
-    {name: "Contact", href: "/#contact"},
+    {name: "Services", mobileName: "Services", href: "/services"},
+    {name: "Life, Health and Annuity Reinsurance", mobileName: "Book", href: "/book"},
+    {name: "About", mobileName: "About", href: "/about"},
+    {name: "Contact", mobileName: "Contact", href: "/#contact"},
 ]
 
 export default function Navbar() {
@@ -29,7 +30,7 @@ export default function Navbar() {
                         <MenuItems className="flex flex-col bg-white absolute top-16 right-0 w-full">
                             {navigation.map((item, i) => (
                                 <MenuItem key={i}>
-                                    <Link href={item.href}>{item.name}</Link>
+                                    <Link href={item.href}>{item.mobileName}</Link>
                                 </MenuItem>
                             ))}
                         </MenuItems>

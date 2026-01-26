@@ -2,6 +2,7 @@
 import Section from "./components/Section";
 import { SectionHeader, LogoHeader } from "./components/Headers";
 import {  Main, MainPageLayout  } from "./components/Main";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
         </p>
         </Section>
         <Section id="book">
-          <SectionHeader> Life, Health and Annuity Reinsurance, Fourth Edition</SectionHeader>
+          <Link href="/book" className="hover:opacity-80 transition-opacity">
+            <SectionHeader> Life, Health and Annuity Reinsurance, Fourth Edition</SectionHeader>
+          </Link>
           <p>We are very excited to announce the fourth edition of our book, Life, Health, and Annuity Reinsurance.  Four new chapters have been added: </p>
           <ul className="px-10">
             <li className="list-disc">Canadian Regulation of Reinsurance</li>
@@ -23,8 +26,8 @@ export default function Home() {
             <li className="list-disc">Reinsurance of Inforce Policies</li>
           </ul>
           <p>The Reinsurance Treaty chapter has been greatly expanded to compare and contrast US and Canadian treaty language.  The Reinsurance in Other than the US and Canada has also been expanded.</p>
-          <p>For more information about the text and the bibliography, please visit the Life, Health, and Annuity Reinsurance page.   For links to the professional and regulatory organization website and for the Glossary of Reinsurance Terms, please visit our Resources page.
-          To purchase it, go to ACTEX Learning.</p>
+          <p>For more information about the text and the bibliography, please visit the <Link href="/book" className="text-bf-blue hover:underline">Life, Health, and Annuity Reinsurance page</Link>. For links to the professional and regulatory organization website and for the Glossary of Reinsurance Terms, please visit our Resources page.
+          To purchase it, go to <a href="https://www.actexmadriver.com/orderselection.aspx?id=453138573" target="_blank" rel="noopener noreferrer" className="text-bf-blue hover:underline">ACTEX Learning</a>.</p>
         </Section>
         <Section id="why-butterfly" className="bg-gray-200">
           <SectionHeader>Why "Butterfly"</SectionHeader>
