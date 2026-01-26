@@ -18,7 +18,8 @@ export default function Contact() {
         const encodedData = new URLSearchParams(formData as unknown as Record<string, string>).toString();
 
         try {
-            const response = await fetch("/contact", {
+            // Post to the static HTML form path that Netlify detects
+            const response = await fetch("/__forms.html", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: encodedData,
@@ -86,7 +87,7 @@ export default function Contact() {
                                 <form 
                                     name="contact"
                                     method="POST"
-                                    action="/contact"
+                                    action="/__forms.html"
                                     data-netlify="true"
                                     data-netlify-honeypot="bot-field"
                                     onSubmit={handleSubmit}
