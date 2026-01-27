@@ -17,8 +17,8 @@ export default function Book() {
                 </Section>
 
                 <Section id="book-description">
-                    <div className="grid md:grid-cols-[auto_1fr] gap-8 items-center">
-                        <div className="flex justify-center md:justify-start">
+                    <div className="max-w-5xl mx-auto grid md:grid-cols-[280px_1fr] gap-8 items-start">
+                        <div className="flex justify-center">
                             <Image 
                                 src="/LHAReinsurance-4ed.jpg" 
                                 alt="Life, Health and Annuity Reinsurance, Fourth Edition book cover" 
@@ -28,7 +28,7 @@ export default function Book() {
                             />
                         </div>
                         <div>
-                    <SectionHeader>About This Edition</SectionHeader>
+                            <SectionHeader>About This Edition</SectionHeader>
                     <p>
                         This fourth edition of Life, Health and Annuity Reinsurance is now available through ACTEX Learning. This edition had a long gestation period, largely because it features the most revisions since the first edition twenty-five years ago. Several factors contributed to the volume of changes.
                     </p>
@@ -49,39 +49,44 @@ export default function Book() {
                 </Section>
 
                 <Section id="book-contents" className="bg-gray-200">
-                    <SectionHeader>Book Contents</SectionHeader>
-                    <p>The chapters are organized into six parts:</p>
-                    <ol className="list-decimal px-10 mt-4 space-y-2">
-                        <li>Introduction to Life, Health, and Annuity Reinsurance</li>
-                        <li>Methods and Applications of Reinsurance</li>
-                        <li>Treaties and Risk Considerations</li>
-                        <li>Regulatory, Accounting, and Tax Considerations</li>
-                        <li>Additional Products and Topics</li>
-                        <li>Administration and Management Considerations</li>
-                    </ol>
+                    <div className="max-w-5xl mx-auto">
+                        <SectionHeader>Book Contents</SectionHeader>
+                        <p>The chapters are organized into six parts:</p>
+                        <ol className="list-decimal px-10 mt-4 space-y-2">
+                            <li>Introduction to Life, Health, and Annuity Reinsurance</li>
+                            <li>Methods and Applications of Reinsurance</li>
+                            <li>Treaties and Risk Considerations</li>
+                            <li>Regulatory, Accounting, and Tax Considerations</li>
+                            <li>Additional Products and Topics</li>
+                            <li>Administration and Management Considerations</li>
+                        </ol>
+                    </div>
                 </Section>
 
                 <Section id="purchase" className="text-center">
-                    <SectionHeader>Purchase the Book</SectionHeader>
-                    <p className="mb-6">
-                        Available in digital and print formats from ACTEX Learning.
-                    </p>
-                    <a 
-                        href="https://www.actexmadriver.com/orderselection.aspx?id=453138573"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-bf-blue text-white font-bf-display font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-lg"
-                    >
-                        Purchase from ACTEX Learning
-                    </a>
+                    <div className="max-w-5xl mx-auto">
+                        <SectionHeader className="justify-center">Purchase the Book</SectionHeader>
+                        <p className="mb-6">
+                            Available in digital and print formats from ACTEX Learning.
+                        </p>
+                        <a 
+                            href="https://www.actexmadriver.com/orderselection.aspx?id=453138573"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-bf-blue text-white font-bf-display font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-lg"
+                        >
+                            Purchase from ACTEX Learning
+                        </a>
+                    </div>
                 </Section>
 
                 <Section id="bibliography" className="bg-gray-200">
-                    <SectionHeader>Bibliography</SectionHeader>
-                    <p className="mb-4">
-                        The bibliography has been expanded to reflect contributions from professional organizations, regulatory entities, and academic sources.
-                    </p>
-                    <Collapsible title="View Complete Bibliography">
+                    <div className="max-w-5xl mx-auto">
+                        <SectionHeader>Bibliography</SectionHeader>
+                        <p className="mb-4">
+                            The bibliography has been expanded to reflect contributions from professional organizations, regulatory entities, and academic sources.
+                        </p>
+                        <Collapsible title="View Complete Bibliography">
                         <div className="space-y-8 pt-4">
                             {bibliographyData.map((category, idx) => (
                                 <div key={idx}>
@@ -94,7 +99,7 @@ export default function Book() {
                                                         href={entry.url} 
                                                         target="_blank" 
                                                         rel="noopener noreferrer"
-                                                        className="text-bf-blue hover:underline"
+                                                        className="text-bf-blue-text"
                                                     >
                                                         {entry.citation}
                                                     </a>
@@ -107,7 +112,8 @@ export default function Book() {
                                 </div>
                             ))}
                         </div>
-                    </Collapsible>
+                        </Collapsible>
+                    </div>
                 </Section>
             </MainPageLayout>
         </Main>

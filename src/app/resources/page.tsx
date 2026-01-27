@@ -38,7 +38,7 @@ export default function Resources() {
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-bf-blue hover:underline inline-flex items-center gap-2"
+                                    className="text-bf-blue-text inline-flex items-center gap-2"
                                 >
                                     {link.name}
                                     <FaExternalLinkAlt className="text-xs opacity-60" />
@@ -59,7 +59,7 @@ export default function Resources() {
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-bf-blue hover:underline inline-flex items-center gap-2"
+                                    className="text-bf-blue-text inline-flex items-center gap-2"
                                 >
                                     {link.name}
                                     <FaExternalLinkAlt className="text-xs opacity-60" />

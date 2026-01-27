@@ -15,23 +15,33 @@ const navigation = [
 export default function Navbar() {
 
     return (
-        <nav className="bg-white shadow flex flex-col">
-            <div className="flex flex-row justify-between items-center px-2 py-2">
-                <Link href="/" className="text-2xl font-display text-bf-blue">Butterfly Financial Consultants</Link>
-                <div className="hidden sm:block flex-row space-x-8 text-sm font-display">
+        <nav className="bg-white shadow" aria-label="Main navigation">
+            <div className="flex flex-row justify-between items-center px-4 py-3">
+                <Link href="/" className="text-xl lg:text-2xl font-display text-bf-blue whitespace-nowrap">
+                    Butterfly Financial Consultants
+                </Link>
+                
+                {/* Desktop navigation - hidden until lg breakpoint */}
+                <div className="hidden lg:flex flex-row items-center gap-6 text-sm font-display">
                     {navigation.map((item, i) => (
-                        <a key={i} href={item.href} className="hover:text-mint-500 transition">{item.name}</a>
+                        <a key={i} href={item.href} className="hover:text-mint-500 transition whitespace-nowrap">
+                            {item.name}
+                        </a>
                     ))}
                 </div>
-                <div className="md:hidden">
+                
+                {/* Mobile menu - visible until lg breakpoint */}
+                <div className="lg:hidden">
                     <Menu>
-                        <MenuButton>
-                            <FaBars />
+                        <MenuButton aria-label="Open menu" className="p-2">
+                            <FaBars aria-hidden="true" className="text-xl" />
                         </MenuButton>   
-                        <MenuItems className="flex flex-col bg-white absolute top-16 right-0 w-full">
+                        <MenuItems className="flex flex-col bg-white shadow-lg absolute top-14 right-0 w-full z-50" aria-label="Main menu">
                             {navigation.map((item, i) => (
                                 <MenuItem key={i}>
-                                    <Link href={item.href}>{item.mobileName}</Link>
+                                    <Link href={item.href} className="px-4 py-3 hover:bg-gray-100 transition">
+                                        {item.mobileName}
+                                    </Link>
                                 </MenuItem>
                             ))}
                         </MenuItems>

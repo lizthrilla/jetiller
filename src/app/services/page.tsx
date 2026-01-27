@@ -14,7 +14,7 @@ export default function Services() {
                 </Section>
            
                 <Section id="service-cards" className=""> 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-10">    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">    
                         {ServicesData.map((service) => (
                             <Card key={service.id} title={service.name} description={service.summary} bullets={service.bullets} />
                         ))}

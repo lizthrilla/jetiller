@@ -1,6 +1,10 @@
 export function Main({ children }: { children: React.ReactNode }) {
     return (
-        <main className="flex flex-col items-center justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <main 
+            id="main-content" 
+            tabIndex={-1}
+            className="flex flex-col items-center font-[family-name:var(--font-geist-sans)]"
+        >
             {children}
         </main>
     )

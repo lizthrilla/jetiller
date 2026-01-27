@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <Main>  
-            <Section id="mission" className="py-8">
+            <Section id="mission">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
                         <p className="text-lg">
@@ -15,7 +15,7 @@ export default function About() {
                         </p>
                 </div>
             </Section>
-                         <Section id="profiles" className="py-8">
+            <Section id="profiles">
                  <div className="grid lg:grid-cols-2 gap-8 items-start">
                      <div className="space-y-4">
                          <div className="flex justify-center lg:justify-start">
@@ -26,7 +26,7 @@ export default function About() {
                              John E. Tiller, Jr. is the owner of Butterfly Financial Consultants. He has a diverse range of experience and numerous successes in the areas of insurance and financial services with a particular talent for issues centering on reinsurance. John provides a wide array of consulting services including capital and strategic planning, arbitration, business management, and much more.
                          </p>
                          <p>
-                             He is a graduate of Harvey Mudd College in Claremont, California. He is a Fellow of the <a href="https://www.soa.org/" target="_blank" rel="noopener noreferrer" className="text-bf-blue"> Society of Actuaries</a>, a <a href="https://www.soa.org/Education/Exam-Req/edu-cera-req.aspx" target="_blank" rel="noopener noreferrer" className="text-bf-blue"> Chartered Enterprise Risk Analyst</a>, and a Member of the <a href="https://actuary.org/" target="_blank" rel="noopener noreferrer" className="text-bf-blue"> American Academy of Actuaries</a>.
+                             He is a graduate of Harvey Mudd College in Claremont, California. He is a Fellow of the <a href="https://www.soa.org/" target="_blank" rel="noopener noreferrer" className="text-bf-blue-text"> Society of Actuaries</a>, a <a href="https://www.soa.org/Education/Exam-Req/edu-cera-req.aspx" target="_blank" rel="noopener noreferrer" className="text-bf-blue-text"> Chartered Enterprise Risk Analyst</a>, and a Member of the <a href="https://actuary.org/" target="_blank" rel="noopener noreferrer" className="text-bf-blue-text"> American Academy of Actuaries</a>.
                          </p>
                          <p>
                              John has authored multiple books and articles on reinsurance and actuarial practice, and frequently serves as an expert witness and arbitrator in (re)insurance disputes. His perspective bridges technical depth with boardroom clarity.

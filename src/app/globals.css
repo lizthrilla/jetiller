@@ -16,6 +16,7 @@
 @theme {
   --color-mint-500: oklch(0.72 0.11 178);
   --color-bf-blue: #009EE2;
+  --color-bf-blue-text: #007AB8; /* Darker blue for body text links - meets WCAG AA 4.5:1 contrast on white */
   --color-bf-gold: #FFD700;
   --font-bf-display: "Montserrat", sans-serif;
   --font-bf-copy: "Lato", sans-serif;
@@ -25,6 +26,54 @@
   html {
     font-size: 20px; /* default is 16px */
   }
+
+  /* Global focus-visible styles for accessibility */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--color-bf-blue);
+    outline-offset: 2px;
+  }
+}
+
+/* Link styles for accessibility - underline by default for contrast */
+/* Exclude: navigation links, heading links, and links with no-underline class */
+a:not([class*="no-underline"]):not(nav a):not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a) {
+  text-decoration: underline;
+}
+
+a:not(nav a):not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Skip link - visually hidden until focused */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+  padding: 1rem 1.5rem;
+  background: var(--color-bf-blue);
+  color: white;
+  font-family: var(--font-bf-display);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 p {
