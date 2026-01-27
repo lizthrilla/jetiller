@@ -9,15 +9,15 @@ export default function Services() {
     return (
         <Main>
             <MainPageLayout>
-                <Section id="services-header" className="w-full">
-                    <PageHeader pageTitle="Services" pageSubtitle="Butterfly provides consulting services for mergers and acquisitions with respect to blocks of insurance, entire companies, and reinsurance for both buyers and sellers." />
-                </Section>
-           
-                <Section id="service-cards" className=""> 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">    
-                        {ServicesData.map((service) => (
-                            <Card key={service.id} title={service.name} description={service.summary} bullets={service.bullets} />
-                        ))}
+                <Section id="services" className="w-full">
+                    <div className="max-w-6xl mx-auto">
+                        <PageHeader pageTitle="Services" pageSubtitle="Butterfly provides consulting services for mergers and acquisitions with respect to blocks of insurance, entire companies, and reinsurance for both buyers and sellers." />
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">    
+                            {ServicesData.map((service) => (
+                                <Card key={service.id} title={service.name} description={service.summary} bullets={service.bullets} />
+                            ))}
+                        </div>
                     </div>
                 </Section>
             </MainPageLayout>
