@@ -44,7 +44,7 @@ export default function Contact() {
                 </Section>
 
                 <Section id="contact-content">
-                    <div className="grid md:grid-cols-2 gap-12">
+                    <div className="grid md:grid-cols-2 gap-8">
                         {/* Contact Information */}
                         <div>
                             <SectionHeader>Get In Touch</SectionHeader>
@@ -58,7 +58,7 @@ export default function Contact() {
                                     <FaEnvelope className="text-bf-blue text-xl" />
                                     <a 
                                         href="mailto:jetiller@jetiller.com" 
-                                        className="text-bf-blue hover:underline"
+                                        className="text-bf-blue-text"
                                     >
                                         jetiller@jetiller.com
                                     </a>
@@ -92,6 +92,7 @@ export default function Contact() {
                                     data-netlify-honeypot="bot-field"
                                     onSubmit={handleSubmit}
                                     className="space-y-4"
+                                    aria-label="Contact form"
                                 >
                                     {/* Hidden fields for Netlify */}
                                     <input type="hidden" name="form-name" value="contact" />
@@ -112,8 +113,9 @@ export default function Contact() {
                                             id="name"
                                             name="name"
                                             required
+                                            aria-required="true"
                                             placeholder="Your name"
-                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-bf-blue focus:border-transparent"
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-bf-blue"
                                         />
                                     </div>
 
@@ -127,8 +129,9 @@ export default function Contact() {
                                             id="email"
                                             name="email"
                                             required
+                                            aria-required="true"
                                             placeholder="your.email@example.com"
-                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-bf-blue focus:border-transparent"
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-bf-blue"
                                         />
                                     </div>
 
@@ -142,7 +145,7 @@ export default function Contact() {
                                             id="subject"
                                             name="subject"
                                             placeholder="What is this regarding?"
-                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-bf-blue focus:border-transparent"
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-bf-blue"
                                         />
                                     </div>
 
@@ -155,9 +158,10 @@ export default function Contact() {
                                             id="message"
                                             name="message"
                                             required
+                                            aria-required="true"
                                             rows={5}
                                             placeholder="Your message..."
-                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-bf-blue focus:border-transparent resize-y"
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-bf-blue resize-y"
                                         />
                                     </div>
 
