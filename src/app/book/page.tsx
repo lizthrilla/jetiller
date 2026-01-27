@@ -48,7 +48,7 @@ export default function Book() {
                     </div>
                 </Section>
 
-                <Section id="book-contents" className="bg-gray-200">
+                <Section id="book-contents" className="w-full bg-gray-200">
                     <div className="max-w-5xl mx-auto">
                         <SectionHeader>Book Contents</SectionHeader>
                         <p>The chapters are organized into six parts:</p>
@@ -80,7 +80,7 @@ export default function Book() {
                     </div>
                 </Section>
 
-                <Section id="bibliography" className="bg-gray-200">
+                <Section id="bibliography" className="w-full bg-gray-200">
                     <div className="max-w-5xl mx-auto">
                         <SectionHeader>Bibliography</SectionHeader>
                         <p className="mb-4">
